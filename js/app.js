@@ -222,14 +222,11 @@ function createGame1ne(heading) {
 
 	// Body
 	var bodyString = '';
-	var paragraph = 'The year before I worked on this project the ';
-	paragraph += '<a href = "http://www.fastcolabs.com/3008594/worlds-biggest-game-pong-heres-how-they-built-it" target = "_blank">';
-		paragraph +=  'Worlds Largest Game of Pong';
-	paragraph += '</a>';
-	paragraph += ' had been made and played on the Cira Center. Frank Lee and Gaylord Holder had both worked on the proejct and the lead'; 
-	paragraph += 'programmer was Marc Barrowclift. During the development of the code base, many design decisions had been made in the heat';
-	paragraph += 'of the moment due to the small time frame they had to get everything working. This resulted in an interesting code base that';
-	paragraph += 'was handed to me the next year when Marc decided to move onto another project.';
+	var paragraph = 'Game 1ne started as a small project to learn Objecte-C while I was working on Conquest with Van.';
+	paragraph += 'The idea was to be a simple orb collection game. Once orbs could be collected I added enemies as ';
+	paragraph += 'red orbs which could destroy the blue orbs, which including you. The project ended up being rather';
+	paragraph += 'simple and took only a weekend to complete, with an extra day of polishing and creating extra bits ';
+	paragraph += 'of art, which is not my strength.';
 
 	bodyString += createParagraph(paragraph);
 
