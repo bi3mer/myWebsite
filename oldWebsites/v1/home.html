@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+	Welcome to my html source code. Not much to see, but by all means take a peak :D
+	This site will be abundantly simple
+-->
+<html>
+	<head>
+		<title>
+			Colan Biemer
+		</title>
+		<link rel="stylesheet" type="text/css" href="home.css"/> <!--google script used for jquery. not good for offline use, but this is online :D-->
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+		<script type='text/javascript' src='jQuery/script.js'></script>
+		<script type='text/javascript' src='jQuery/pong.js'></script>
+		<script type='text/javascript' src='jQuery/ticTacToe.js'></script>
+	</head>
+	<body>
+		<h1>
+			<a href="./game.html">Colan Biemer</a> <!-- make this clickable for hidden game :D -->
+		</h1>
+		<ul>
+			<li><a href="./home.html">Home</a></li> 
+			<li><a href="./projects.html">Projects</a></li>
+			<li><a href="./bio.html">Bio</a></li>
+		</ul>
+		<!-- Picture goes here, make sure centered -->
+		<p><h3>Easter Eggs are present </h3></p>
+		<img src = "./images/cfb_prop_no_word.jpg" id = "picture"/>
+
+		<div id  = "pongDiv">
+			<img src = "./images/pong.png"/>
+		</div>
+		<div id = "ticDiv">
+			<img src = "./images/ticTacToe.png"/>
+		</div>
+		<div id = "canvasCenter">
+			<!-- Canvas will go here with these properties
+			<canvas width = "640" height = "480" id="canvas" style="border:black 1px solid">
+				Your browser is to old, try google chrome.
+			-->
+		</div>	
+		<!--set up images for games -->
+		<img src = "./images/sprite1.png" id = "sprite1"/>
+
+		<img src="./images/ticGame/topLeft.png" 		id = "topLeft" 		style="display:none"/>
+		<img src="./images/ticGame/topMiddle.png" 		id = "topMiddle" 	style="display:none"/>
+		<img src="./images/ticGame/topRight.png" 		id = "topRight" 	style="display:none"/>
+		<img src="./images/ticGame/middleLeft.png" 		id = "middleLeft" 	style="display:none"/>
+		<img src="./images/ticGame/middleMiddle.png"	id = "middleMiddle" style="display:none"/>
+		<img src="./images/ticGame/middleRight.png" 	id = "middleRight" 	style="display:none"/>
+		<img src="./images/ticGame/bottomLeft.png" 		id = "bottomLeft" 	style="display:none"/>
+		<img src="./images/ticGame/bottomMiddle.png" 	id = "bottomMiddle" style="display:none"/>
+		<img src="./images/ticGame/bottomRight.png" 	id = "bottomRight" 	style="display:none"/>
+	</body>
+</html>

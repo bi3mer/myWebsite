@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+	Welcome to my html source code. Not much to see, but by all means take a peak :D
+-->
+<html>
+	<head>
+		<title>
+			Colan Biemer Projects
+		</title> 
+		<link rel="stylesheet" type="text/css" href="home.css"/> <!--google script used for jquery. not good for offline use, but this is online :D-->
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2'></script>
+		</script>
+		<script type='text/javascript' src='jQuery/script.js'></script>
+</script>
+	</head>
+	<body>
+		<h1>
+			<a href="./game.html">Colan Biemer</a> <!-- make this clickable for hidden game :D -->
+		</h1>
+		<ul>
+			<li><a href="./home.html">Home</a></li> 
+			<li><a href="./projects.html">Projects</a></li>
+			<li><a href="./bio.html">Bio</a></li>
+		</ul>
+		<p > <h3>Easter Eggs are present </h3></p>
+		<p> <!-- make this past and previous separated -->
+		<div id ="tab">
+			<h2>Current Projects:</h2>
+			<div id ="tab">
+			<div id="color"> 
+				Cira Center Light Tester - <br> <br>
+			</div>
+			<div id ="tab">
+				Working with Gaylord Holder, Frank Lee, and the Cira Center staff to create a light tester for the building. Originally a multiplatfrom version, built from the original code was created in Python. Issues arose, however, with the level of ease it would be for the staff members to use. The working version has been scrapped and now an android app is being created to send keystrokes to named pipe on our server. This is how we ran tetris the night of the event, and should work. It is a bit more decoupled than we would have prefered, but is the best solution we have at the moment.
+				
+			</div><br>
+			<div id="color"> 
+				Potato Paul's Adventure! - <br> <br>
+			</div>
+			<div id ="tab">
+				Solo project being made for Iphone and Ipad in swift.
+				I don't have a lot of details to share at the moment on the project as it is relatively new and I still have to learn swift.
+				Here is the icon image for the project:<br>
+				<img src = "./images/Potato_Paul/icon_1024x1024.png" height=256 width=256/>
+				
+			</div><br>
+		</div>
+			<h2>Finished Projects:</h2>
+			<div id = "tab">
+			<div id="color"> 
+				Z-Day - <br> <br>
+			</div>
+			<div id ="tab">
+				Worked with Cody Rowlands, Mike DiLucca, and John Keough <br>
+				This game was created as a project for CS 345 for Drexel University.
+				The game is a twist on general zombie survival games, where, instead of fighing to survive against zombies, you fight as a zombie trying to survive. The enemies are drones whom will fire at you, and occasionaly a boss drone will come down to try and finish you off once and for all. 
+				Since this was created in a class we had a huge tiem constraint and were unable to complete all that we would have liked to, but the game came out reasonable well all things considered
+				<br>
+				My role in the game was to create the spawning system and everything related to the drones besides the models and the textures. On top of this I also modeled the ufo's which can be seen in the sky, and worked briefly on the end game explosion. 
+				<a href="https://www.cs.drexel.edu/~cfb43/Z-DayWeb.html" id="reverse_tab"  target="_blank">
+					You can play Z-Day here.
+				</a>
+				<br>
+			</div>
+			<div id="color"> 
+				Game 1ne - <br> <br>
+			</div>
+			<div id ="tab">
+				Solo project.<br>
+				Designed and developed iOS app that I "creatively" named "Game 1ne" as it was my first solo game project. Game uses basic particle files using Apple's particle builder. Artwork for background, text, logo, etc. were all done by myself. Gameplay features a blue orb dodging the red orbs and collecting the blue orbs, the more blue orbs collected will result in faster velocities for both blue and red orbs along with more red orbs showing up. In total the game took three days to make, and was mainly made to learn SpriteKit.
+			</div>
+			<br>
+			<div id="color"> 
+				Cira Center Tetris - 
+			</div> <br>
+			<div id ="tab">
+				Worked with Gaylord Holder and Frank Lee. Original code base by Marc Barrowclift. <br>
+				Given old code base that was used to create the Worlds Largest Game of Pong and asked to develop a version of Tetris for the building, with the addition of it being double sided this time around. Developed and optimized portions of exisitng code base, including building double buffering into the system. Develoepd four diferrent versions of Tetris:
+				<ol>
+					<div><li id = "tetris">Regular Tetris</li></div>
+					<div><li id = "tetris">Impaired Tetris</li></div>
+					<div><li id = "tetris">COOP Tetris</li></div>
+					<div><li id = "tetris"> Competitive Tetris</li></div>
+				</ol>
+				Impaired Tetris was a slowed down version of Regular Tetris, COOP Tetris was Regular Tetris with different key input handling. Regular Tetris was built to last two minutes per a game, to achieve this the speed at which the blocks dropped increased over time. Competitive multiplayer used different keyboard input along with new functions to be running two separate games of Tetris at the same time. Additional functions were also added to deal with sending lines to the opponents board. Named pipes were used to communicate keyboard inputs from outside to the server inside which ran the games and sent commands to the lights.
+				<br><br>
+				<a href="http://technical.ly/philly/2014/04/03/tetris-cira-centre-drexel-colan-biemer/" id="reverse_tab"  target="_blank">
+					Meet the Drexel sophomore who's programming Tetris on the Cira Centre
+				</a>
+			</div>
+			</div>
+		</p>
+		<h2>Scrapped Projects:</h2>
+		<div id ="tab">
+		<div id="color"> 
+				Rock, Paper, Scissors: The Board Game - <br> <br>
+			</div>
+			<div id ="tab">
+				Solo project.<br>
+				Project features 3x5 board designed and developed for iPad. Players can move checker like pieces, representing rock, paper, scissors, and king in order to kill the other opponents King. The rules are simple in that rock can kill scissors or the king but can't kill paper or the other rock, the other pieces act similarly. The king cannot kill any piece except for the other king. Movement for all piecies is one square in any direction, with only one piece being able to move per a turn. 2 player, offline, version is completed and currently working on AI for 1 player alternative. A monte-carlo tree search will be implemented to run the AI.
+				<br>
+				The proejct was scrapped due to after a few playtests, I figured it was a bit too difficult for most players. Also most didn't find it even half as fun as I did.
+			</div>
+
+			</div>
+			<br>
+		<div id ="tab">
+		<div id="color"> 
+				IOS Conquest - <br> <br>
+			</div>
+			<div id ="tab">
+				Worked with Van Nguyen and Frank Lee. <br>
+				Project was an iOS exclusive app which used the maps program to simulate a game similar to Netreck, except in real life. Buildings represented planets which could be captured by players if they were in range of the game. Goal was to also allow for players to be able to see other allies on the screen, along with a scan to see nearby enemies. Tested Amazon SimpleDB, Microsoft Azure, iCloud, and Parser to attempt to find a valid solution. Biggest issues encountered were uncertainty of GPS and pulling from database in efficient manner. The highest level of GPS for apple required far too much battery for users, due to the uncertainty of the weaker GPS direct player verse player battles were cut out. Pulling from database presented many issues including massive battery drain, max pull requests, and more. Moved to a server run game method, with minimal work being done on the Iphone. Similar issues were had and project has been placed on the side lines. 
+			</div>
+			<br>
+		</div>
+		</div>
+	</body>
+</html>

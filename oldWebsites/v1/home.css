@@ -1,0 +1,107 @@
+*{
+	background-color: #EEEEEE;
+}
+h1{
+	color:#151515;
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	display:inline-block;
+	overflow: hidden;
+	margin:0 auto;
+	height:auto;
+	width:100%;
+} 
+h2{
+	color:#272727;
+}
+li{
+	display:inline-block;
+	position:relative;
+	right:2%;/* 2% looked the best */
+}
+
+a{
+	color:#8b8989;
+	text-decoration: none;
+	display:block;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+a:hover{
+	color:#272727;
+}
+#spacing{
+	padding-left:0px;
+	padding-right:0px;
+}
+h3 {
+	text-align: center;
+	position: fixed;
+	top:0px;
+	right:20px;
+	color: #272727;
+}
+#picture{
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+}
+p{
+	color:#151515;
+}
+ul{
+	font-size: 20px;
+	text-align: center;
+}
+ol{
+	color:#151515;
+}
+#tab{
+	margin-left: 20px;
+	color:#151515;
+}
+#color {
+	color:#151515;
+}
+#reverse_tab{
+	margin-left:-20px;
+}
+#sprite1{
+	position: relative;
+	bottom:-100%;
+}
+#jquery{
+	position:inline-block;
+	height:100px;
+	width:100px;
+}
+#canvasCenter{
+	width: 100%;
+	text-align:center;
+}
+#testCanvas{
+	display: inline;
+}
+#pongDiv{
+	display:inline-block;
+	height:80px;
+	width:80px;
+	border-radius:10%;
+	background-color: #999999;
+	position:absolute;
+	top:20%;
+}
+#ticDiv{
+	display:inline-block;
+	height:80px;
+	width:80px;
+	border-radius:10%;
+	background-color: #999999;
+	position:absolute;
+	top:35%;
+}
+#canvas{
+	border:black 1px solid;
+    image-rendering: optimizeSpeed;         
+}
