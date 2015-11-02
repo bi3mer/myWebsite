@@ -86,7 +86,7 @@ function displayBio() {
  */
 function createHeaderItem(imgSrc, title, role, workedWith, noWorkedWithFlag, language) {
 	var string = '';
-	string += '<img src="' + imgSrc + '" height="65" style="border-radius: 5px; margin-right: 25px" align="left">';
+	string += '<img src="' + imgSrc + '" height="65" width="65" style="border-radius: 5px; margin-right: 25px" align="left">';
 	string += '<div>';
 		string += '<h4>';
 			string += title;
@@ -211,6 +211,31 @@ function createTetris(heading) {
 	return  createCollapsableItem(head, body);
 }
 
+function createInfiniteSkies(heading) {
+	// Header
+	var imgSrc = 'https://infiniteskiesgame.files.wordpress.com/2015/10/cropped-5400_3d_space_scene_hd_wallpapers.jpg';
+	var title  = 'Infinite Skies - In Development';
+	var role   = 'AI Programmer';
+	var workedWith = 'Cody Rowlands, Alex Bafaloukos, Bryan Fawber, Bernard Sheeran, and Vincent De Tommaso';
+	var noWorkedWithFlag = false;
+	var language = 'Unity C#'
+
+	// Body
+	var bodyString = '';
+	var paragraph = 'This project is still in development, for a game workshop class, and has been fairly interesting to work on. ';
+	paragraph += 'Currently my role is to implement pathfinding into the game, which should be fairly simple ';
+	paragraph += 'since unity has a built in NavMesh system. However because we are using a planets, I\'ve had ';
+	paragraph += 'to create my own system. While this is ideal for learning, it isn\'t ideal for getting a game ';
+	paragraph += 'up and running in a little under 5 weeks. You can of see the process at our ';
+	paragraph += '<a href="https://infiniteskiesgame.wordpress.com/" target="_blank"> website </a>.'
+
+	bodyString += createParagraph(paragraph);
+
+	var head = createCollapsableHeader(createHeaderItem(imgSrc, title, role, workedWith, noWorkedWithFlag, language), heading);
+	var body = createCollapsableBody(bodyString, heading);
+	return  createCollapsableItem(head, body);
+}
+
 function createGame1ne(heading) {
 	// Header
 	var imgSrc = 'images/game1ne_icon.png';
@@ -224,7 +249,7 @@ function createGame1ne(heading) {
 	var bodyString = '';
 	var paragraph = 'Game 1ne started as a small project to learn Objecte-C while I was working on Conquest with Van.';
 	paragraph += 'The idea was to be a simple orb collection game. Once orbs could be collected I added enemies as ';
-	paragraph += 'red orbs which could destroy the blue orbs, which including you. The project ended up being rather';
+	paragraph += 'red orbs which could destroy the blue orbs, which including you. The project ended up being rather ';
 	paragraph += 'simple and took only a weekend to complete, with an extra day of polishing and creating extra bits ';
 	paragraph += 'of art, which is not my strength.';
 
@@ -284,7 +309,7 @@ function createZDay(heading) {
 	var role   = 'Lead Developer';
 	var workedWith = 'Cody Rowlands, Mike DiLucca, and John Keough';
 	var noWorkedWithFlag = false;
-	var language = 'C#';
+	var language = 'Unity C#';
 
 	// Body
 	var bodyString = '';
@@ -388,6 +413,7 @@ function displayProjects() {
 	string += createAccordionHead();
 
 	string += createTetris('tetris');
+	string += createInfiniteSkies('InfiniteSkies');
 	string += createZDay('Z-day');
 	string += createUnityProjectManager("unity");
 	string += createGame1ne('game1ne');
