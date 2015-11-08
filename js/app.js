@@ -236,6 +236,31 @@ function createInfiniteSkies(heading) {
 	return  createCollapsableItem(head, body);
 }
 
+function createTwitterMap(heading) {
+	// Header
+	var imgSrc = 'images/twitterMap.png';
+	var title  = 'Twitter Map';
+	var role   = 'Programmer';
+	var workedWith = 'Frank Lee';
+	var noWorkedWithFlag = false;
+	var language = 'HTML, CSS, and Node.js (Javascript)'
+
+	// Body
+	var bodyString = '';
+	var paragraph = 'This project never got to see the light of day to complexities out of my control but the idea ';
+	paragraph += 'behind it was to create a service that would look for tweets with a hashtag of X and then map them ';
+	paragraph += 'to a world map. I was able to complete this and without a ton of difficulty. The majority of my time ';
+	paragraph += 'was spent refactoring the database design as I was still familiarizing myself with MongoDB. ';
+	paragraph += 'The project is open source and can be seen at ';
+	paragraph += '<a href="https://github.com/bi3mer/egsCiraPope" target="_blank">github</a>.'
+
+	bodyString += createParagraph(paragraph);
+
+	var head = createCollapsableHeader(createHeaderItem(imgSrc, title, role, workedWith, noWorkedWithFlag, language), heading);
+	var body = createCollapsableBody(bodyString, heading);
+	return  createCollapsableItem(head, body);
+}
+
 function createGame1ne(heading) {
 	// Header
 	var imgSrc = 'images/game1ne_icon.png';
@@ -414,6 +439,7 @@ function displayProjects() {
 
 	string += createTetris('tetris');
 	string += createInfiniteSkies('InfiniteSkies');
+	string += createTwitterMap('TwitterMap');
 	string += createZDay('Z-day');
 	string += createUnityProjectManager("unity");
 	string += createGame1ne('game1ne');
