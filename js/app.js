@@ -226,8 +226,15 @@ function createInfiniteSkies(heading) {
 	paragraph += 'Currently my role is to implement pathfinding into the game, which should be fairly simple ';
 	paragraph += 'since unity has a built in NavMesh system. However because we are using a planets, I\'ve had ';
 	paragraph += 'to create my own system. While this is ideal for learning, it isn\'t ideal for getting a game ';
-	paragraph += 'up and running in a little under 5 weeks. You can of see the process at our ';
+	paragraph += 'up and running in a little under 5 weeks. You can our progress at this ';
 	paragraph += '<a href="https://infiniteskiesgame.wordpress.com/" target="_blank"> website </a>.'
+
+	bodyString += createParagraph(paragraph);
+
+	paragraph = '<center><img src="images/aStar.png" style="width:50%;"></center>';
+	paragraph += 'A quick note, this screenshot doesn\'t repersent the final version. As evidence you can see that the ';
+	paragraph += 'the tank at the top of the screen is going to go through the rocks. This is the result of a layer not ';
+	paragraph += 'being updated because of other pending work. In the future it will be remedied.'
 
 	bodyString += createParagraph(paragraph);
 
